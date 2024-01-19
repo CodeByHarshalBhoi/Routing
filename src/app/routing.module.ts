@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -6,6 +6,8 @@ import { ContactComponent } from './contact/contact.component';
 import { CoursesComponent } from './courses/courses.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CursesDetailsComponent } from './courses/curses-details/curses-details.component';
+
+
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -20,9 +22,12 @@ const routes: Routes = [
   ]},
   {path:'**', component:NotFoundComponent}
 ];
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports:[
+    RoutingModule
+  ],
 })
-export class AppRoutingModule { }
+
+export class RoutingModule{
+
+}
