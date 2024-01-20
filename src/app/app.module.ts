@@ -19,6 +19,7 @@ import { TestimonyComponent } from './home/testimony/testimony.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -44,6 +45,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
    RouterModule,
+   BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

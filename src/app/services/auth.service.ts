@@ -25,6 +25,6 @@ export class AuthService {
   }
 
   isAuthenticated() {
-    return this.isLogged
+    return this.isLogged;
   }
 }
