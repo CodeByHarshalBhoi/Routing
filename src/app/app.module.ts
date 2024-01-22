@@ -20,6 +20,8 @@ import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -39,13 +41,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ServicesComponent,
     TestimonyComponent,
     LoginComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
    RouterModule,
    BrowserAnimationsModule,
+   CommonModule,
+   FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
